@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
 import '../styles/Result.css';
+import ResultTable from './ResultTable';
 import { Link } from 'react-router-dom';
 
 export default function Result() {
-    
+
     function onRestart(){
        console.log('hiiii')
     }
@@ -42,6 +43,11 @@ export default function Result() {
 
         <div className="start">
             <Link className='btn' to={'/'} onClick={onRestart}>Restart</Link>
+        </div>
+
+        <div className="container">
+            {/* result table */}
+            <ResultTable></ResultTable>
         </div>
 
     </div>
