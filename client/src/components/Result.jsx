@@ -3,6 +3,10 @@ import '../styles/Result.css';
 import { Link } from 'react-router-dom';
 
 export default function Result() {
+    
+    function onRestart(){
+       console.log('hiiii')
+    }
 
 
   return (
@@ -12,27 +16,27 @@ export default function Result() {
         <div className='result flex-center'>
             <div className='flex'>
                 <span>Username</span>
-                <span className='bold'>{userId || ""}</span>
+                <span className='bold'>player</span>
             </div>
             <div className='flex'>
                 <span>Total Quiz Points : </span>
-                <span className='bold'>{totalPoints || 0}</span>
+                <span className='bold'>50</span>
             </div>
             <div className='flex'>
                 <span>Total Questions : </span>
-                <span className='bold'>{ queue.length || 0}</span>
+                <span className='bold'>05</span>
             </div>
             <div className='flex'>
                 <span>Total Attempts : </span>
-                <span className='bold'>{attempts || 0}</span>
+                <span className='bold'>03</span>
             </div>
             <div className='flex'>
                 <span>Total Earn Points : </span>
-                <span className='bold'>{earnPoints || 0}</span>
+                <span className='bold'>30</span>
             </div>
             <div className='flex'>
                 <span>Quiz Result</span>
-                <span style={{ color : `${flag ? "#2aff95" : "#ff2a66" }` }} className='bold'>{flag ? "Passed" : "Failed"}</span>
+                <span>Passed</span>
             </div>
         </div>
 
