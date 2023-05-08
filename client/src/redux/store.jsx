@@ -10,4 +10,6 @@ const rootReducer = combineReducers({
 })
 
 /** create store with reducer */
-export default configureStore({ reducer : rootReducer});
+const store = configureStore({ reducer : rootReducer});  
+
+export default store;
