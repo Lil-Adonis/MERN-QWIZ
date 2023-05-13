@@ -11,3 +11,7 @@ app.get('/', (req,res) => {
         res.json(error)
     }
 })
+
+app.listen (8080, () => {
+    console.log('server connected')
+})
